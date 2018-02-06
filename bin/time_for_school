@@ -19,9 +19,8 @@ more_knowledge= avi.teach
 steve.learn(some_knowledge)
 steve.learn(more_knowledge)
 
-puts "Steve just learned this important knowledge: '#{steve.knowledge.first}', #{steve.knowledge.second} from Avi"
-
-jim=User.new
-jim.first_name= "Jim"
-jim.last_name= "last"
-jim.learn
+puts "Steve just learned this important knowledge: '#{steve.knowledge.first}' from Avi"
+Steve.knowledge.each do |knowledge|
+  puts "Steve just learned #{knowledge}."
+end 
+  
